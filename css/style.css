@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(0, 5%, 92%);
+    word-break: break-word;
+}
+.header {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons__button {
+    background: transparent;
+    color: teal;
+    border: none;
+    margin: 0 0 0 20px;
+    transition: color 0.4s;
+}
+
+@media(max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:disabled {
+    color: #ccc;
+}
