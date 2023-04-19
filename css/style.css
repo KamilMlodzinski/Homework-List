@@ -50,3 +50,197 @@ body {
 .buttons__button:disabled {
     color: #ccc;
 }
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    
+}
+    @media(max-width: 767px) {
+        .form {
+            grid-template-columns: 1fr;
+        }
+
+}
+
+.form__input {
+    border: solid 2px hsl(0, 5%, 92%);
+    padding: 10px;
+}
+
+.form__button {
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    padding: 10px;
+    border-style: none;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
+}
+
+.section {
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 0 5px #ddd;
+    
+}
+
+.section__body {
+    padding: 20px;
+}
+
+.section__title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.section__header {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media(max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 10px;
+    grid-gap: 20px;
+    border-bottom: 1px solid hsl(0, 5%, 92%);
+}
+
+
+.tasks {
+    margin: 0;
+    padding: 20px;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    background-color: hsl(120, 100%, 25%);
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    border-style: none;
+    transition: 1s;
+}
+
+.list__button:hover {
+    background: hsl(120, 100%, 35%);
+}
+
+.list__button--done {
+    color: white;
+    cursor: pointer;
+}
+
+.list__button--done:active{
+    background:hsl(120, 76%, 35%);
+    border:1px solid black;
+}
+
+.list__taskName--done {
+    text-decoration: line-through;
+
+}
+
+.list__button--remove{
+    background-color: hsl(0, 100%, 50%);
+    border-style: none;
+    color: white;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.list__button--remove:hover {
+    background: hsl(0, 100%, 60%); 
+}
+
+.list__button--remove:active{
+    background-color: hsl(0, 100%, 60%);
+    border: 1px solid black;
+}
+
+.tasks {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    word-break: break-word;
+    border-bottom: 1px solid #ddd;
+  
+}
+
+.tasks__item--hidden {
+    display: none;
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+}
+
+.tasks__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    transition: background 0.5s;
+}
+
+.tasks__button--toggleDone {
+    background: hsl(120, 61%, 35%);
+}
+
+.tasks__button--toggleDone:hover {
+    background: hsl(120, 61%, 40%);
+}
+
+.tasks__button--toggleDone:active {
+    background: hsl(120, 61%, 45%);
+}
+
+.tasks__button--remove {
+    background: hsl(0, 83%, 47%);
+}
+
+.tasks__button--remove:hover {
+    background: hsl(348, 83%, 52%);
+}
+
+.tasks__button--remove:active {
+    background: hsl(348, 83%, 57%);
+}
